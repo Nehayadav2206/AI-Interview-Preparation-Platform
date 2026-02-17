@@ -1,0 +1,175 @@
+/* ===== CLEAN BACKGROUND ===== */
+.performance-page {
+  min-height: 100vh;
+  padding: 60px 30px;
+  background: #f4f6fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== HEADING ===== */
+.performance-page h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.filter-buttons button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.filter-buttons button:hover {
+  transform: translateY(-2px);
+  background: #5848d6;
+}
+
+.filter-buttons .active {
+  background: #333;
+}
+
+/* ===== STATS SECTION ===== */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  min-width: 160px;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 28px;
+  color: #6c63ff;
+}
+
+.stat-card p {
+  margin-top: 6px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease-in;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #6c63ff;
+  color: white;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #f3f4ff;
+}
+
+/* ===== SCORE COLORS ===== */
+.green {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.orange {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.red {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+  background: #eee;
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.progress-fill.green {
+  background: #28a745;
+}
+
+.progress-fill.orange {
+  background: #ff9800;
+}
+
+.progress-fill.red {
+  background: #dc3545;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* ===== FADE ANIMATION ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
